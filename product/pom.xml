@@ -11,6 +11,7 @@
     <groupId>com.StockBooster-MAX</groupId>
     <artifactId>product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>product</name>
     <description>product</description>
     <url/>
@@ -131,6 +132,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>${artifactId}:stock-booster-max</name>
+                    </image>
+                </configuration>
             </plugin>
         </plugins>
     </build>
